@@ -1,18 +1,27 @@
 // Import the Link component from Next.js for client-side navigation
 import Link from 'next/link';
 
+// Import the custom Date component for formatting dates
 import Date from '../components/date';
+
 // Import the Head component from Next.js for managing document head elements
 import Head from 'next/head';
+
 // Import the Layout component and siteTitle constant from the layout component
 import Layout, { siteTitle } from '../components/layout';
+
 // Import CSS module styles for utility classes
 import utilStyles from '../styles/utils.module.css';
 
+// Import the getSortedPostsData function to fetch blog post data
 import { getSortedPostsData } from '../lib/posts';
  
+// Static generation function that runs at build time to fetch data for this page
 export async function getStaticProps() {
+  // Call the function to get all blog posts sorted by date
   const allPostsData = getSortedPostsData();
+  
+  // Return the data as props to be passed to the component
   return {
     props: {
       allPostsData,
@@ -20,8 +29,8 @@ export async function getStaticProps() {
   };
 }
 
-
 // Define the default export function component named Home
+// This component receives allPostsData as a prop from getStaticProps
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
@@ -40,6 +49,7 @@ export default function Home({ allPostsData }) {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerPolicy="strict-origin-when-cross-origin" 
         allowFullScreen
+        style={{ marginBottom: '10px' }}
       />
       
       </section>

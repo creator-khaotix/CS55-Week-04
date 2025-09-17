@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
  
 const name = 'Philip Weyhe';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = "Philip Weyhe's Favorite Videos";
  
 export default function Layout({ children, home }) {
   return (

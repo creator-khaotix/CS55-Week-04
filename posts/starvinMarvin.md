@@ -5,7 +5,7 @@ date: '2020-01-04'
 
 
 I have no idea what else to make pages about so here's the
-short that came on after the No Kitty That's My Pot Pie Video:
+short that came on after the No Kitty That's My Pot Pie video:
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
   <iframe 
